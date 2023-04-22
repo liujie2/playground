@@ -121,3 +121,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 配置文件数据的临时存放文件夹
+FILE_UPLOAD_TEMP_DIR = "/Users/liujie/python/MyDjango/MyDjango/temp"
+
+# 判断文件大小的条件
+FILE_UPLOAD_MAX_MEMORY_SIZE = 209715200
+
+# 设置文件上传的处理过程
+FILE_UPLOAD_HANDLERS = ['MyDjango.handler.myFileUploadHandler']
+
+# 默认配置，以列表或元组的形式表示
